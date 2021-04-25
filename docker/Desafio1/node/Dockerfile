@@ -1,4 +1,9 @@
-FROM node:15.14.0-alpine3.10
-RUN apk add bash
+FROM node:15
+
 WORKDIR /usr/src/app
-CMD ["tail", "-f", "/dev/null"]
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["node", "index.js"]
