@@ -1,0 +1,1 @@
+docker run -d --name=node  --network=pfa maxmelodia/pfa-node node index.js

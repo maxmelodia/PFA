@@ -1,25 +1,18 @@
-// const express = require('express')
-// const app = express()
+const express = require('express')
+const app = express()
 
-// app.get('/', (req,res) => {
-//     res.send('<h1>FullCycle!</h1>')
-// })
+app.get('/', (req,res) => {
+    (async () => {
+        const db = require("./db");
+        console.log('Começou!');
+     
+        console.log('SELECT * FROM MODULOS');
+        const modulos = await db.selectModulos();
+        console.log(modulos);
+        res.send(modulos)
+    })();
+})
 
-// app.listen(3000, () => {
-//     console.log('Rodando na porta 3000...')
-// })
-
-const db = require("./db");
-
-console.log('aaaaa')
-
-
-// (async () => {
-//     const db = require("./db");
-//     console.log('Começou!');
- 
-//     console.log('SELECT * FROM CLIENTES');
-//     const clientes = await db.selectCustomers();
-//     console.log(clientes);
-// })();
-
+app.listen(3000, () => {
+    console.log('Rodando na porta 3000...')
+})

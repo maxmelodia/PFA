@@ -1,0 +1,1 @@
+docker run -d --name=mysql --network=pfa maxmelodia/pfa-mysql
