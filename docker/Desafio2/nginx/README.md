@@ -1,1 +1,0 @@
-docker run -d --name=nginx --network=pfa -p 8080:80 maxmelodia/pfa-nginx

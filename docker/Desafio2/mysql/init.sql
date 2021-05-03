@@ -5,7 +5,8 @@ use desafio2;
 CREATE TABLE modulos(
  id INTEGER NOT NULL PRIMARY KEY,
  descricao VARCHAR(100) NOT NULL 
-) ENGINE=InnoDB DEFAULT CHARSET=utf-8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
  
 INSERT INTO modulos (id, descricao) VALUES (1,'Docker');
 INSERT INTO modulos (id, descricao) VALUES (2,'Fundamentos de Arquitetura de Software');
