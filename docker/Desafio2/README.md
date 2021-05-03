@@ -5,7 +5,6 @@ Docker
 Desafio 2
 
 Aproveite o desafio 1 que você criou no PFA, a aplicação com sua linguagem favorita, Nginx e MySQL para aplicar o Docker Compose.
-
 Crie o docker-compose.yaml com 3 serviços, um para cada tecnologia. Você deverá configurar os seguintes pontos:
 
 - O serviço do MySQL não poderá ter um Dockerfile personalizado, é necessário usar diretamente a imagem oficial do MySQL e deverá existir um volume para persistir o banco de dados no projeto, o nome da pasta será dbdata. Deverá usar o entrypoint-initdb.d para já criar um banco e popular dados no banco de dados padrão.
@@ -20,3 +19,7 @@ Para corrigir seu projeto rodaremos apenas o comando "docker-compose up", tudo j
 
 Divirtam-se e bom trabalho!
 
+
+<h3>DESAFIO 2</h3>
+
+-> docker-compose up
